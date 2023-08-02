@@ -7,6 +7,13 @@ class Pelicula:
     #crear método __str__
 
     #crear metodos de acceso: mostrar el atributo nombre y modificar
+    @property
+    def nombre(self):
+        return self.__nombre
+    
+    @nombre.setter
+    def nombre(self,nombre):
+        self.__nombre = nombre
 
 class CatalogoPelicula:
     
@@ -21,6 +28,7 @@ class CatalogoPelicula:
     def listar_peliculas(self):
         # abrir el archivo con with 
         # imprimir lo que hay en el archivo ( arhivo.read() )
+        #print()
         pass
 
     def eliminar_peliculas(self):
